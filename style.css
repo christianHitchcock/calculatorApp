@@ -1,4 +1,4 @@
-
+@import url(theme.css);
 * {
     margin: 0;
     box-sizing: border-box;
@@ -6,7 +6,7 @@
 }
 body {
     font-family:"League Spartan" ;
-    background-color: hsl(0, 0%, 90%);
+    background-color: var(  --main-background-color);
     user-select: none;
     display: grid;
     place-items: center;
@@ -17,12 +17,64 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
 }
 
 .headerName h2 {
     padding: 20px;
-    color:hsl(60, 10%, 19%);
+    padding-left: 40px;
+    color: var(--text-color);
     font-size: 30px;
+}
+.header span {
+    color: var(--text-color);
+    font-size:12px ;
+    padding-top: 25px;
+    margin-right: -80px;
+}
+.Button.horizTranslate2 { 
+    -webkit-transition: -webkit-transform 0.1s linear; 
+    -webkit-transform: translateX(20px);
+}
+.Button.horizTranslate3 { 
+    -webkit-transition: -webkit-transform 0.1s linear;
+     -webkit-transform: translateX(40px);
+}
+.Button.horizTranslate1 { 
+    -webkit-transition: -webkit-transform 0.1s linear; 
+    -webkit-transform: translateX(0px);
+}
+#buttonContainer {
+    background-color: var(--toggle-background-color); 
+    width:69px; 
+    height:23px; 
+    margin-top: 20px;
+    margin-right: 35px;
+    border-radius:14px;
+}
+.Button {
+    width:10px; 
+    height:10px; 
+    background-color:var(--togglebtn); 
+    border-radius:8px; 
+    position:relative; 
+    top:6px; 
+    left:6px;
+}
+#legendTextContainer{
+    padding-bottom: 0px;
+    display:inline-block;
+    color:var(--text-color);
+    position: absolute;
+    top: 30px;
+    font-size:10pt;
+    text-align:center;
+}
+.legendText{
+    display:inline-block;
+    width:20px; 
+    cursor:default; 
+    user-select: none;
 }
 
 .result input {
@@ -31,13 +83,13 @@ body {
     margin-left: 40px;
     margin-bottom: 20px;
     border-radius: 8px;
-    background-color: hsl(0, 0%, 94%);
+    background-color: var(--screen-background-color);
     border: none;
     font-family:"League Spartan" ;
     font-size: 40px;
-    color:hsl(60, 10%, 19%);
+    color:var(--secondtext-color);
     text-align: right;
-    border: 1px solid hsl(0, 0%, 93%);
+    border: 1px solid var(--screen-background-color);
 }
 .result input:focus {
     border: none;
@@ -46,12 +98,12 @@ body {
 
 form .buttons {
     text-align: center;
-    background-color: hsl(0, 5%, 81%);
+    background-color: var(--keypad-background-color);
     width: 80%;
-    height: 350px;
+    height: 390px;
     margin: auto;
     padding-top: 20px;
-    border: 1px solid hsl(0, 5%, 81%);
+    border: 1px solid var(--keypad-background-color);
     border-radius: 8px;
 }
 
@@ -59,44 +111,81 @@ form .buttons {
     height: 50px;
     width: 50px;
     font-size: 30px; 
-    color: hsl(60, 10%, 19%);
+    background-color: var(--key-background);
+    color: var( --buttoncolor);
     margin: 5px;
     border: none;
     outline: none;
+    margin-top: 12px;
     border-radius: 5px;
     font-family:"League Spartan" ;
-    box-shadow: 0px 3px hsl(35, 11%, 61%);  
+    box-shadow: 0px 3px var(--key-shadow);  
 }
 .buttons input[type="button"]:focus {
-    color:#FF1E1E;
-    transform: scale(0.9);
+    background-color: var(--clickedbtn);
 }
 
 #reset {
     height: 50px;
     width: 110px;
     font-size: 18px;
-    color: hsl(0, 0%, 100%);
-    background-color:  hsl(185, 42%, 37%);
-    box-shadow: 0px 3px hsl(185, 58%, 25%); 
+    color: var( --coloredbtn);
+    background-color:  var( --largekey-one-background);
+    box-shadow: 0px 3px var(--largekey-one-shadow); 
 }
 
 #equals {
     height: 50px;
     width: 110px;
     font-size: 18px;
-    color: hsl(0, 0%, 100%);
-    background-color:   hsl(25, 98%, 40%);
-    box-shadow: 0px 3px  hsl(25, 99%, 27%);  
+    color: var( --coloredbtn2);
+    background-color: var( --largekey-two-background);
+    box-shadow: 0px 3px var(--largekey-two-shadow);  
 }
 #delete {
     font-size: 18px;
-    color: hsl(0, 0%, 100%);
-    background-color:  hsl(185, 42%, 37%);
-    box-shadow: 0px 3px hsl(185, 58%, 25%);  
+    color: var( --coloredbtn);
+    background-color:  var( --largekey-one-background);
+    box-shadow: 0px 3px var(--largekey-one-shadow);
 }
 .attribution { 
     font-size: 11px; 
     text-align: center; 
-    margin-top: 40px;}
-    .attribution a { color: hsl(228, 45%, 44%); }
+    margin-top: 40px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width: 768px) {
+    .headerName h2 {
+        padding: 20px;
+        padding-left: 30px;
+    }
+    .header span {
+        margin-right: -160px;
+    }
+    .result input {
+        width: 90%;
+        height: 70px;
+        margin-left: 25px;
+        margin-bottom: 20px;
+    }
+    .buttons input[type="button"]{
+        height: 50px;
+        width: 70px;
+    }
+    form .buttons {
+        width: 90%;
+        height: 400px;
+    }
+    #reset {
+        height: 40px;
+        width: 150px;
+    }
+    
+    #equals {
+        height: 40px;
+        width: 150px; 
+    }
+}

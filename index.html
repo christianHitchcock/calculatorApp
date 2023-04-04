@@ -14,16 +14,23 @@
 <body>
 <main>
 
-<div class="container">
   <div class="header">
     <div class="headerName">
       <h2>calc</h2>
     </div>
-    <div class="themes">
-      <h6>THEME</h6>
+    <span>THEME</span>
+    
+    <div class="themes-wrapper">
+      <div id="buttonContainer">
+        <div class="Button"></div>
+      </div>
+      <div id="legendTextContainer">
+        <div class="legendText" onclick="go_to_1()">1</div>
+        <div class="legendText" onclick="go_to_2()">2</div>
+        <div class="legendText" onclick="go_to_3()">3</div>
     </div>
-  </div>
-  
+    </div>
+    </div>   
 
   <div class="calculator">
     <form action="#" name="form">
@@ -53,7 +60,7 @@
           <input type="button" value="." name="vdot" onclick="val(vdot.value)">
           <input type="button" value="0" name="v0" onclick="val(v0.value)">
           <input type="button" value="/" name="vdiv" onclick="val(vdiv.value)">
-          <input type="button" value="x" name="vmul" onclick="val(vmul.value)">
+          <input type="button" value="*" name="vmul" onclick="val(vmul.value)">
            
         </div>
         <div class="row">
@@ -64,14 +71,12 @@
     </div>
     </form>
 </div>
-</div>
-
   
 </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">christian</a>.
   </div>
   <script src="sandbox.js"></script>
 </body>

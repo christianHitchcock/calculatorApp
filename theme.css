@@ -1,0 +1,61 @@
+:root,
+:root.themeone {
+  --main-background-color: hsl(222, 26%, 31%);
+  --toggle-background-color: hsl(223, 31%, 20%);
+  --keypad-background-color:hsl(223, 31%, 20%);
+  --screen-background-color:hsl(224, 36%, 15%);
+  --largekey-one-background: hsl(225, 21%, 49%);
+  --largekey-one-shadow :hsl(224, 28%, 35%);
+  --largekey-two-background: hsl(6, 63%, 50%);
+  --largekey-two-shadow:hsl(6, 70%, 34%);
+  --key-background :  hsl(30, 25%, 89%);
+  --togglebtn : hsl(6, 63%, 50%);
+  --key-shadow : hsl(28, 16%, 65%);
+  --text-color : hsl(0, 0%, 100%);
+  --secondtext-color :  hsl(0, 0%, 100%);
+  --buttoncolor:hsl(221, 14%, 31%);
+  --coloredbtn: hsl(0, 0%, 100%);
+  --coloredbtn2:hsl(0, 0%, 100%);
+  --clickedbtn: hsl(0, 0%, 100%);
+}
+
+:root.themeTwo {
+    --main-background-color:  hsl(0, 0%, 90%);
+    --toggle-background-color: hsl(0, 5%, 81%);
+    --keypad-background-color:hsl(0, 5%, 81%);
+    --screen-background-color:hsl(0, 0%, 93%);
+    --largekey-one-background:  hsl(185, 42%, 37%);
+    --largekey-one-shadow :hsl(185, 58%, 25%);
+    --largekey-two-background: hsl(25, 98%, 40%);
+    --largekey-two-shadow: hsl(25, 99%, 27%);
+    --key-background :  hsl(45, 7%, 89%);
+    --togglebtn : hsl(25, 98%, 40%);
+    --key-shadow : hsl(35, 11%, 61%);
+    --text-color : hsl(60, 10%, 19%);
+    --secondtext-color :  hsl(60, 10%, 19%);
+    --buttoncolor:hsl(60, 10%, 19%);
+    --coloredbtn: hsl(0, 0%, 100%);
+    --coloredbtn2:hsl(0, 0%, 100%);
+    --clickedbtn: hsl(0, 0%, 100%);
+}
+
+:root.themeThree {
+    --main-background-color: hsl(268, 75%, 9%);
+    --toggle-background-color: hsl(268, 71%, 12%);
+    --keypad-background-color:hsl(268, 71%, 12%);
+    --screen-background-color: hsl(268, 71%, 12%);
+    --largekey-one-background:  hsl(281, 89%, 26%);
+    --largekey-one-shadow :hsl(281, 89%, 26%);
+    --largekey-two-background: hsl(176, 100%, 44%);
+    --largekey-two-shadow: hsl(177, 92%, 70%);
+    --key-background :   hsl(268, 47%, 21%);
+    --togglebtn :hsl(176, 100%, 44%);
+    --key-shadow :  hsl(290, 70%, 36%);
+    --text-color :  hsl(52, 100%, 62%);
+    --secondtext-color :  hsl(52, 100%, 62%);
+    --thirdtext-color : hsl(198, 20%, 13%);
+    --buttoncolor:hsl(52, 100%, 62%);
+    --coloredbtn: hsl(0, 0%, 100%);
+    --coloredbtn2: hsl(198, 20%, 13%);
+    --clickedbtn: hsl(281, 89%, 26%);
+}
